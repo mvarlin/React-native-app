@@ -12,9 +12,9 @@ export default function FunScreen() {
   );
 }
 
-FunScreen.navigationOptions = {
-  title: 'Fun',
-};
+// FunScreen.navigationOptions = {
+//   title: 'Fun',
+// };
 
 const styles = StyleSheet.create({
   container: {

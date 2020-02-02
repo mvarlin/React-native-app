@@ -93,7 +93,7 @@ const styles = StyleSheet.create({
       // backgroundColor: 'grey',
     },
     title: {
-        fontSize: 26,
+        fontSize: 18,
         textAlign: 'center',
         opacity: 1 ,
        // height: 50,

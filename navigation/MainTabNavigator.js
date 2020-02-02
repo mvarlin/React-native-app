@@ -3,8 +3,8 @@ import { createBottomTabNavigator } from 'react-navigation-tabs';
 
 import ListScreen from '../screens/ListScreen';
 import MapScreen from '../screens/MapScreen';
-import ColorScreen from '../screens/ColorScreen';
-import FunScreen from '../screens/FunScreen';
+// import ColorScreen from '../screens/ColorScreen';
+// import FunScreen from '../screens/FunScreen';
 import DetailScreen from '../screens/DetailScreen';
 
 const ListStack = createStackNavigator(
@@ -29,29 +29,29 @@ MapStack.navigationOptions = {
 };
 
 
-const ColorStack = createStackNavigator(
-  {
-    Links: ColorScreen,
-  }
-);
+// const ColorStack = createStackNavigator(
+//   {
+//     Links: ColorScreen,
+//   }
+// );
 
-ColorStack.navigationOptions = {
-  tabBarLabel: '🎨',
-};
+// ColorStack.navigationOptions = {
+//   tabBarLabel: '🎨',
+// };
 
-const FunStack = createStackNavigator(
-  {
-    Links: FunScreen,
-  }
-);
+// const FunStack = createStackNavigator(
+//   {
+//     Links: FunScreen,
+//   }
+// );
 
-FunStack.navigationOptions = {
-  tabBarLabel: '🕹️ ',
-};
+// FunStack.navigationOptions = {
+//   tabBarLabel: '🕹️ ',
+// };
 
 export default createBottomTabNavigator({
   ListStack,
   MapStack,
-  ColorStack,
-  FunStack
+  // ColorStack,
+  // FunStack
 });

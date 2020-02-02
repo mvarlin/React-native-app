@@ -100,6 +100,6 @@ render() {
  });
 
 
- ColorScreen.navigationOptions = {
-    title: "Colors",
-  };
+//  ColorScreen.navigationOptions = {
+//     title: "Colors",
+//   };

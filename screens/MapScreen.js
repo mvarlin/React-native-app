@@ -50,14 +50,21 @@ let longitude;
     }
 
     return (
-      <MapView style = {styles.map} provider={PROVIDER_GOOGLE} region={{latitude: latitude, longitude: longitude, latitudeDelta: 0.009, longitudeDelta: 0.009,}}>
-                        {<MapView.Marker coordinate={position}/>}
 
+      <View>
+        <View>
+          <Text style = {styles.title}>Localistaion </Text>
+        </View>
 
-      <View style={styles.container} style={{position: "absolute", top: 100, left: 50}}>
-        <Text>{text}</Text>
+        <View>
+          <MapView style = {styles.map} provider={PROVIDER_GOOGLE} region={{latitude: latitude, longitude: longitude, latitudeDelta: 0.009, longitudeDelta: 0.009,}}>
+                            {<MapView.Marker coordinate={position}/>}
+            <View style={styles.container} style={{position: "absolute", top: 100, left: 50}}>
+              <Text>{text}</Text>
+            </View>
+          </MapView>
+        </View>
       </View>
-      </MapView>
 
     );
   }
@@ -71,6 +78,14 @@ const styles = StyleSheet.create({
     paddingTop: Constants.statusBarHeight,
     backgroundColor: '#ecf0f1',
   },
+  title: {
+    //marginTop: ,
+    fontSize: 18,
+    textAlign: 'center',
+    opacity: 1 ,
+   // height: 50,
+
+  },
   paragraph: {
     margin: 24,
     fontSize: 18,
@@ -78,11 +93,11 @@ const styles = StyleSheet.create({
   },
   map: {
     //flex: 1,
-    margin: 34,
-    marginTop: 137,
-    marginBottom: 50,
-    width: 295,
-    height: 248,
+    // margin: 34,
+     marginTop: 60,
+    // marginBottom: 50,
+    width: '100%',
+    height: '100%',
     flexDirection: 'column',
     backgroundColor:'red',
     justifyContent: 'center',
